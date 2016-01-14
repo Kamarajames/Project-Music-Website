@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Love your music the review</title>
+	  
+<!--Try to add an upload file function to this website with drop down boxes
+thisform has submit button to send the data to a server database where the 
+will process the language via PHP, C# or java I will have to get the
+server to create a message to send back to the browser confirming the form 
+has been recieved
+A form may have several form controls i.e. radio buttons each
+gathering different information. The server
+needs to know which piece of inputted data
+corresponds with which form element see page 157 probably need password etc
+place <option> function in drop menu pg 164 use it for country you reside in
+also upload your favourite music sound pg 166
+I will need to change to feildset and lengend to collect grouped info see pg 178-->
+	
+	  <meta name="language" content="english">
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><!--Required for W3C Validation-->
+      <meta name="keywords" content="Music, Age, Seventies, Eighties, Nineties, Beyond, Taste, Fan, Club ">
+      <meta name="description" content ="Pictures, Videos & Blogg about Music and how it can change with a person age">
+      <meta name="author" content ="James Kamara">
+      <meta name="copyright" content ="Copyright James Kamara 2015">
+	  <!--Style sheet embedded in the html sheet refers only to this form-->
+      <link rel="stylesheet" href="css/Review-style.css" type="text/css" >
+      <style type="text/css">
+         body {background-image: url("images/main image home.jpe");}
+         .column { width: 355px; height: 400px; padding: 10px; border: 1px solid #000000; float: left; background-color: #CDD780}
+         .column p { font: 12px arial, sans-serif;}
+         .column img { float: right; margin-left: 5px;}
+         h1 {width: 355px; font: bold 16px arial, sans-serif; color: white; border-bottom: 1px solid #af0b1c}
+		 
+         #wrapper {width: 770px; font: 12px arial, sans-serif; margin: auto;}
+         #header {width: 768px; background-black: white; border: 2px solid black; border-bottom-width: 0px; text-align: center;}
+		 
+		 
+		 
+         a:link {font: bold 16px arial, sans-serif; line-height:39px; width:60px; color: black; text-decoration: underline;}
+         a:visited {font: bold 16px arial, sans-serif; color: black; text-decoration: none;}
+		 
+         a:hover {font: bold 16px arial, sans-serif; color: white; background-image: url("images/texture-firebrick.jpg"); text-decoration: underline;}
+         a:active {font: bold 16px arial, sans-serif; color: #af5962; text-decoration: none;}
+		 
+         #horizNav a:link {text-decoration: none; text-align: center; display: block; width: 188px; float: left; border: 1px solid #b5c69c; margin-left: 2px;}
+         #horizNav a:visited {text-align: center; display: block; width: 188px; float: left; border: 1px solid #b5c69c; margin-left: 1px;}
+         #horizNav a:hover {text-decoration: none; text-align: center; display: block;line-height:39px;background-color: #83877D; width: 188px; float: left; border: 1px solid #b5c69c; margin-left: 1px;}
+         #horizNav a:active {text-decoration: none; text-align: center; display: block; width: 188px; float: left; border: 1px solid #b5c69c; margin-left: 1px;}
+         #horizNav {margin: 0px; padding: 0px; width: 768px; height: 40px; list-style-type: none; margin-bottom: 16px; background-image: url("images/main3 image.jpe"); border: 1px solid black}
+         #horizNav li {display: inline;}
+		 
+         #footerNav {margin: 0px; padding: 0px; list-style-type: none;}
+         #footerNav li {display: inline;}
+		 
+         #tableForm {margin: auto;}
+         td {vertical-align: top}
+         .contact {width: 748px;}
+         .contact h1 {width: 730px;}
+         input {width: 300px;}
+         .inline {border: 0px; width: auto;}
+         .textArea {width: 300px; height: 200px;}
+         .button {margin-right: 20px; width: 60px;}
+		 
+		 td{
+		 padding:"2";
+		 }
+		 
+		 table{
+		 border-spacing:"0";
+		 border-collapse:collapse;
+		 width:"460";
+		 }
+		 
+      </style>
+   </head>
+   <body>
+      <div id="wrapper">
+         <div id="header"><img src="images/BlackWhiteimage3.jpg" alt="Saxaphone image"></div>
+		 
+         <!--here is my navigation -->
+         <ul id="horizNav">
+            <li><a href="index1.html">Home</a></li>
+            <li><a href="mailto:j_kamara2000@yahoo.co.uk">Email Me</a></li>
+            <li><a href="https://www.google.ie/maps/@52.2461285,-7.1399525,17z">W.I.T. Location</a></li>
+            <li><a href="https://www.facebook.com/-OLDIES-MUSIC-FAN-CLUB--310471592154/">Facebook Music Fan</a></li>
+         </ul>
+         <!--this is my contact page form -->
+		 <div class="column contact">
+		 
+            <h1>Feedback Form...........................................Love your music</h1>
+			
+			<!--The form starts here place the url where # appears in action
+			$_SERVER["PHP_SELF"] exploits can be avoided by using the 
+			htmlspecialchars() function.-->
+            <form method="post" 
+			action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+			<!--The first thing we will do is to pass all variables through 
+			PHP's htmlspecialchars() function.-->
+               <table  id="tableForm">
+                  <tr>
+                     <th colspan="4">What Music do you like?</th>
+                  </tr>
+                  <tr> <!--style="width=150">First Name:-->
+                     <td><label for="firstname">First Name</label> </td>
+                     <td colspan="3"><input  type="text" name="firstname" id="firstname" checked="checked" required="required"/> 
+					 
+					 </td>
+                  </tr>
+                  <tr>
+                     <td>Last Name:</td>
+                     <td colspan="3"><input  type="text" name="lastname" id="lastname" checked="checked" required="required"/>
+					 <label for="lastname"></label>
+					 </td>
+                  </tr>
+                  <tr>
+                     <td>Your favourite years</td>
+                     <td><label for="50s60s">50s60s:</label><input class="inline" type="checkbox" id="50s60s" name="50s60s" >
+					 </td>
+                     <td><label for="70s80s">70s80s:</label><input class="inline" type="checkbox" id="70s80s" name="70s80s" >
+					 </td>
+                     <td><label for="90s00s">90s00s:</label><input class="inline" type="checkbox" id="90s00s" name="90s00s">
+					 </td>
+                  </tr>
+				  <tr>
+				     <td>Age Group:</td>
+					 <td colspan="3"><input class="inline" type="radio" name="age" id="group" value="group" checked="checked" />
+					 <label for="group">18 to 30</label>
+					 <input class="inline" type="radio" name="age" id="group" value="group"/>
+					 <label for="group">31 to 40</label>
+					 <input class="inline" type="radio" name="age" id="group" value="group"/>
+					 <label for="group">41 to 55</label>
+					 <input class="inline" type="radio" name="age" id="group" value="group"/>
+					 <label for="group">56+</label>
+					 </td>
+				  </tr>
+				  <tr>
+				     <td>Gender:</td>
+					 <td colspan="3"><input class="inline" type="radio" name="sex" id="male" value="male" checked="checked" />
+					 <label for="male">male</label>
+					 <input class="inline" type="radio" name="sex" id="female" value="female"/>
+					 <label for="female">female</label>
+					 </td>
+				  </tr>
+                  <tr>
+                     <td><label for="comments">Enter your Comments why?</label></td>
+                     <td colspan="3"><textarea class="textArea" name="comments" id="comments"  > </textarea>
+					 
+					 </td>
+                  </tr>
+			
+                  <tr>
+                     <td colspan="4" style="text-align:right"><input type="submit" value="submit" class="button"><input type="reset" value="reset" class="button"></td>
+                  </tr>
+               </table>
+            </form> <!--The form ends here-->
+				    
+         </div><br style="clear: left;">
+         <hr style="margin-top: 20px; color: #8e9675; width: 100%; height: 1px;">
+         <!-- here is my footer nav -->
+         <ul id="footerNav">
+            <li><a href="index1.html">Home</a>  |</li>
+            <li><a href="NewContact.html" title>Back To Top of Page</a>  |</li>
+            <li><a href="https://www.google.ie/maps/@52.2461285,-7.1399525,17z">W.I.T. Location</a>  |</li>
+            <li><a href="https://www.facebook.com/-OLDIES-MUSIC-FAN-CLUB--310471592154/">Facebook Music Fan</a>  |</li>
+            <li><a href="mailto:j_kamara2000@yahoo.co.uk">Email me</a></li>
+							
+         </ul>
+      </div>
+	  
+   </body>
+</html>

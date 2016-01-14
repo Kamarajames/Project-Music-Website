@@ -1,0 +1,353 @@
+nav ul ul {
+display: none;
+	
+}
+
+nav ul li:hover > ul {
+display: block;
+}
+  /*This is the true ul element which holds the other nested ul elements*/
+nav ul {
+background: #efefef; 
+background: linear-gradient(#977777, white);
+box-shadow: 0px 5px 10px #D18522;
+padding: 0 20px;
+border-radius: 10px;  
+list-style: none; /*This removes the bullets*/
+position: relative;
+display: inline-table;
+text-align: center
+}
+
+nav ul:after {
+content: ""; clear: both; display: block;
+}
+
+  /* These are the list items inside the ul element*/
+nav ul li {
+float: left; /*Gets the list items side by side*/
+margin: 0px;
+border: 1px solid grey;
+position:relative;/*this is where the error was now corrected*/
+}
+   
+
+
+nav a:hover{
+background-position:0px -40px;
+background-image: url("images/texture-firebrick.jpg");
+}
+	 
+   /*This has a image inserted show over the page number*/
+nav ul li:hover {
+		/*background: #D85F84;*/
+background-image: url("images/texture-firebrick.jpg");
+}       /*Behind the image is the text page number in white*/
+
+nav ul li:hover a {
+color: #fff;
+}
+
+	/*This is the inner nav colour*/
+nav ul li a {
+font-family: verdana, arial;
+display: block; /*Tells the browser to treat the a-link element as a block you can set the width
+		the width if needed allows the mouse to point anywhere in the box to go to another link so its the same with as its list items*/
+padding: 15px 45px;
+color: #906E2B; 
+text-decoration: none; 
+background-image: url("images/main3 image.jpe");                            
+}
+	   /*takes away any under-line bar*
+	    /*this is the section for centring the text and here you can add a background image* /
+	   
+	/*This is the inner inner nav colour yellow-brown place picture here*/
+nav ul ul {
+background: #A18729; border-radius: 0px; padding: 0;
+position: absolute; top: 100%;
+z-index:10; /*This will raise the inner inner nav higher than the main content so image
+	 is above the main pictures etc the z-index raises its position*/
+}
+nav ul ul li {
+float: none; 
+border-top: 1px solid #6b727c;
+border-bottom: 1px solid #575f6a;
+position: relative;
+}
+nav ul ul li a {
+padding: 15px 40px;
+color: #fff;
+}	
+     /*This is the inner inner inner nav colour*/
+     /*This is the hover over the drop box menu for each a-link topic dark grey colour*/
+nav ul ul li a:hover {
+background: #4b545f;
+color: black;
+}
+
+nav ul ul ul {
+position: absolute; left: 100%; top:0;
+}
+
+.button { z-index: 0;} /*z posiotn moves the button*/
+
+/*My Code*/
+
+* {
+margin: 0 0 0 0;
+padding: 0 0 0 0
+}
+/*The body has a deep sky blue colour*/
+body {
+max-width: 1200px;
+margin: 0 auto;
+color: #0e0e0e;
+background-image: url("images/Vector image.jpe");
+background-color: #cccccc;
+/*background:  #1D5060;*/
+/*background: linear-gradient(black, white);*/
+/*background="Large music image" used for html*/
+font-family: Arial, verdana, tahoma , serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400
+}
+
+/*The container has a shaded grey background colour*/
+div.container {
+width: 96%;
+float: left;
+padding: 1% 2%;
+margin: 1% 0;
+border-radius: 10px;
+background: #C4BFBF;
+/*background: linear-gradient(black, white);*/
+/*This is the container box of the screen has amber box shadow*/
+box-shadow: 5px 5px 10px #D18522;
+height: 400px
+}
+/*This is the 1st main header at the top of the page Black and white trumpet image*/
+header {
+width: 100%;
+background: url('images/BlackWhiteimage.jpe');
+float: left;
+margin: 1% 0;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #202020
+}
+/*Text colour white within the 1st main header background of h1*/
+header h1 {
+color:white;
+font-size: 28px;
+text-align: center;
+padding: 4% 1%;
+text-shadow: 5px 5px 10px black
+}
+
+/*This is the 3rd main content colour grad that has the text & picture*/
+#main {
+width:100%;
+background: url('images/main image home.jpe');
+float: left;
+margin: 1% 0;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #D18522;
+z-index: 0;
+text-align:right;
+}
+video{
+height:auto;
+width:24%;
+}
+
+.video_poster{
+width:24%;
+height:auto;
+background-size:24% auto;
+background-image:url(images/70sclothesimageA.jpg);
+}
+
+
+.alignleft {
+float: left;
+margin-left:2%;
+width: 80px;
+}
+
+
+.alignright {
+float: right;
+margin-left:0%; 
+}
+
+
+
+/*Text within main content h1*/
+#main h1 {
+font-size : 30px;
+text-align : center;
+color : black;
+margin: 2% 0 }
+/*Paragraphs within main content h1*/
+#main p{
+text-align: center;
+text-indent: 16px;
+margin: 2% 10%;
+clear: both;
+text-align:left;
+font-weight:bold;
+}
+.BoldHeadingRed5 {
+font-size: 20px;
+font-weight:bold;
+text-align:center;
+color:#802E2E;	
+}
+.BoldcommentRed{
+font-size:18px;
+font-weight:bold;
+text-align:center;
+color:#802E2E;	
+}
+.BoldHeadingBlue{
+font-weight: bold;
+color:#0F3C5A;
+text-align:center;
+}
+.BoldHeadingBlue1{
+font-weight: bold;
+color:#0F3C5A;
+
+}
+.CommentYellow{
+color:#6A4D09;
+text-align: center;
+font-weight:bold;
+}
+.TextAlignCenter{
+text-align:center;	
+font-weight:bold;
+font-size: 22px;
+
+}
+
+
+#main img { /*Change here*/
+margin: 7% 7%;
+border-radius: 5px;
+border: solid #000000 1px;
+box-shadow: 4px 4px 8px #202020
+}
+
+
+#main img {
+max-width: 100%
+}
+/*This is the footer bar*/
+#footer { /*type in again to correct paste and copy so text can be re-aligned*/
+width: 100%;
+background: #979798;
+float: left;
+margin: 0 0 .5% 0;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #D18522
+}
+/*This is the reference to the <a href=""> in nav for html footer page*/
+address {
+font-size : 16px; 
+text-align : center; 
+color: #efefef;
+padding: 1% 0;
+text-shadow: 1px 1px 0px #202020
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+/* These are the actual links*/
+a {
+display: block;
+width: 186px;
+text-decoration: none !important;
+/*changes a-links spacing in navigation bar and make its length longer*/
+}
+
+nav a:link    {color:black; background-color:transparent;
+ text-decoration:none}
+nav a:visited {color:black ; background-color:transparent;
+ text-decoration:none}
+nav a:hover   {color:blue; background-color:transparent;
+ text-decoration:underline}
+nav a:active  {color:yellow; background-color:transparent;
+ text-decoration:underline}
+
+
+
+      
+nav ul{
+width: 97%;
+background: linear-gradient(#977777, white);
+float: left;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #D18522}
+
+a.button {
+width: 85px; /*This is where you change the review button size to match the text*/
+display: block;
+float: left;
+background: grey;
+box-shadow: -8px -8px 32px #990000 inset;
+border: solid #990000 1px;
+border-radius: 45px;
+height: 20px;
+position: absolute;/*This fixed the review button*/
+}
+a.button {
+font-family: arial;
+color: #ffffff;
+text-decoration: none;
+text-shadow: 1px 1px 1px #0e0e0e;
+padding: .5% .5%;
+margin: 0 .5%;
+text-align:left;
+}
+a:hover.button {
+color: white;
+text-decoration: none;
+box-shadow: -8px -8px 32px grey inset;
+border: solid black 2px;
+}
+
+
+/*New image code below*/
+#main {
+	width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+/*via the margin center the image and caption box together*/
+figure {
+display: inline-block;
+width: 202px;
+height: 170px;
+background-image: url('images/caption image2 background.jpe');
+margin: 30px;
+padding: 9px;
+text-align: center;
+}
+
+figure img {
+width: 200px;
+height: 150px;
+border: 1px solid #d6d6d6;
+}
+
+/*This is the small pink text box below picture*/
+figcaption {
+background-image: url("images/gold5image.jpe");
+padding-left: 20px;
+background-repeat: no-repeat;
+position: relative;
+}
